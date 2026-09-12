@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>✦ Hoy no quiero esconderme de ti ✦</title>
+
+<meta name="theme-color" content="#ead7cb">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#f5eee9;
+    --paper:#fffdf9;
+    --text:#493b37;
+    --soft:#9b8177;
+    --accent:#b77f70;
+    --line:rgba(130,92,80,.16);
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    min-height:100vh;
+    background:
+        radial-gradient(circle at 15% 15%,rgba(255,255,255,.9),transparent 25%),
+        radial-gradient(circle at 85% 85%,rgba(221,180,161,.35),transparent 30%),
+        var(--bg);
+    color:var(--text);
+    font-family:'DM Sans',sans-serif;
+}
+
+body:before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background:
+        linear-gradient(90deg,transparent 49.8%,rgba(120,80,65,.035) 50%,transparent 50.2%);
+}
+
+.container{
+    width:min(760px,92%);
+    margin:auto;
+    padding:55px 0 70px;
+}
+
+.top{
+    text-align:center;
+    animation:fade 1.2s ease both;
+}
+
+.label{
+    font-family:'Cinzel',serif;
+    font-size:.68rem;
+    letter-spacing:5px;
+    color:var(--accent);
+}
+
+.top h1{
+    margin-top:22px;
+    font-family:'Playfair Display',serif;
+    font-size:clamp(2.2rem,7vw,4.2rem);
+    font-weight:500;
+    line-height:1.15;
+}
+
+.date{
+    margin-top:18px;
+    color:var(--soft);
+    font-size:.72rem;
+    letter-spacing:2px;
+}
+
+.letter{
+    margin:50px auto 0;
+    padding:45px clamp(25px,7vw,65px);
+    background:var(--paper);
+    border:1px solid var(--line);
+    box-shadow:0 25px 70px rgba(90,60,50,.12);
+    position:relative;
+    animation:rise 1.3s .2s ease both;
+}
+
+.letter:before,
+.letter:after{
+    content:"";
+    position:absolute;
+    width:45px;
+    height:45px;
+    border-color:rgba(183,127,112,.28);
+    border-style:solid;
+}
+
+.letter:before{
+    top:14px;
+    left:14px;
+    border-width:1px 0 0 1px;
+}
+
+.letter:after{
+    bottom:14px;
+    right:14px;
+    border-width:0 1px 1px 0;
+}
+
+.heart{
+    text-align:center;
+    color:var(--accent);
+    font-size:1.3rem;
+    margin-bottom:28px;
+}
+
+p{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(1.05rem,2.4vw,1.22rem);
+    line-height:1.95;
+    margin-bottom:23px;
+}
+
+strong{
+    font-weight:500;
+}
+
+.signature{
+    margin-top:35px;
+    text-align:right;
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    color:var(--soft);
+    line-height:1.7;
+}
+
+.next{
+    margin-top:45px;
+    text-align:center;
+}
+
+.next p{
+    font-family:'DM Sans',sans-serif;
+    font-size:.72rem;
+    letter-spacing:2px;
+    color:var(--soft);
+    margin-bottom:18px;
+}
+
+.next a{
+    display:inline-block;
+    padding:14px 25px;
+    border:1px solid rgba(183,127,112,.35);
+    border-radius:40px;
+    text-decoration:none;
+    color:var(--accent);
+    font-size:.67rem;
+    letter-spacing:2px;
+    transition:.3s;
+}
+
+.next a:hover{
+    transform:translateY(-3px);
+    background:rgba(183,127,112,.08);
+}
+
+@keyframes fade{
+    from{opacity:0}
+    to{opacity:1}
+}
+
+@keyframes rise{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:600px){
+    .container{
+        padding-top:40px;
+    }
+
+    .letter{
+        padding:38px 24px;
+    }
+
+    p{
+        line-height:1.85;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<main class="container">
+
+    <header class="top">
+        <div class="label">UNA MAÑANA PARA HABLARTE DESDE EL CORAZÓN</div>
+
+        <h1>
+            Hoy no quiero<br>
+            esconderme de ti.
+        </h1>
+
+        <div class="date">
+            JUEVES · 10 DE SEPTIEMBRE · 2026
+        </div>
+    </header>
+
+
+    <article class="letter">
+
+        <div class="heart">♡</div>
+
+        <p>
+            Mi amor, Valeria:
+        </p>
+
+        <p>
+            Sé que esta carta llega tarde, y sé también que estos últimos
+            días no han sido precisamente los más bonitos entre nosotros.
+            No quiero hacer como si nada hubiera pasado, ni escribirte
+            simplemente unas palabras bonitas para pasar por encima de todo.
+        </p>
+
+        <p>
+            La verdad es que no te escribí porque todavía me sentía mal
+            por lo que pasó entre nosotros. No quería mencionarte aquella
+            discusión mientras todavía tenía en la cabeza todo lo que hice,
+            todo lo que dije y la manera en que terminé lastimándote.
+        </p>
+
+        <p>
+            Y quiero decirte algo sin buscar excusas:
+            <strong>sé que la cagué.</strong>
+        </p>
+
+        <p>
+            Fue mi culpa. Sé que hubo cosas que hice y palabras que dije
+            que no debieron salir de mí, y me duele muchísimo saber que
+            pude decepcionarte, hacerte sentir mal y lastimar a la persona
+            que más quiero.
+        </p>
+
+        <p>
+            Lo siento demasiado, mi amor.
+            De verdad siento cada palabra, cada actitud y cada momento en
+            el que hice que algo que debía sentirse bonito terminara
+            convirtiéndose en dolor.
+        </p>
+
+        <p>
+            No quiero pedirte que olvides todo de un momento para otro.
+            Tampoco quiero actuar como si una disculpa borrara lo que pasó.
+            Solo quiero que sepas que he pensado mucho en ello y que
+            entiendo que tenía que hacerlo.
+        </p>
+
+        <p>
+            Y hay algo que quiero agradecerte profundamente:
+            <strong>gracias por dejarme redimirme contigo.</strong>
+        </p>
+
+        <p>
+            Gracias por todavía permitirme demostrarte que puedo hacerlo
+            mejor. Sé que no basta con decirlo. Sé que tengo que demostrarlo
+            con mis acciones, con mi forma de hablarte, de escucharte,
+            de cuidarte y de tratarte.
+        </p>
+
+        <p>
+            No quiero ser la persona que solamente te diga cuánto te ama.
+            Quiero aprender a ser también la persona que haga que ese amor
+            se sienta seguro, bonito y digno de ti.
+        </p>
+
+        <p>
+            Y aunque hoy solamente quería dejarte este pequeño mensaje,
+            todavía tengo algo más que decirte...
+        </p>
+
+        <div class="signature">
+            Continuará mañana.<br>
+            Con muchísimo amor y con el corazón sincero.
+        </div>
+
+    </article>
+
+
+    <div class="next">
+
+        <p>
+            PARTE I TERMINADA · HAY ALGO MÁS QUE QUIERO DECIRTE
+        </p>
+
+        <a href="PEGA-AQUI-EL-LINK-DE-LA-CARTA-DEL-VIERNES">
+            CONTINUAR MI CARTA →
+        </a>
+
+    </div>
+
+</main>
+
+</body>
+</html>
